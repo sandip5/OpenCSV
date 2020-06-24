@@ -4,11 +4,14 @@ import com.opencsv.bean.CsvBindByName;
 
 public class CSVUser {
     @CsvBindByName
-    private final String name;
+    private String name;
     @CsvBindByName(column = "email", required = true)
-    private final String email;
+    private String email;
     @CsvBindByName(column = "phone")
-    private final String phoneNo;
+    private String phoneNo;
+    public CSVUser(){
+
+    }
     public CSVUser(String name, String email, String phoneNo) {
         this.name = name;
         this.email = email;
