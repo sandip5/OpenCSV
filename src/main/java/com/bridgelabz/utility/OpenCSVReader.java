@@ -1,3 +1,5 @@
+package com.bridgelabz.utility;
+
 import com.opencsv.CSVReader;
 
 import java.io.IOException;
@@ -18,7 +20,6 @@ public class OpenCSVReader {
                 System.out.println("Name :" + nextRecord[0]);
                 System.out.println("Email :" + nextRecord[1]);
                 System.out.println("Phone :" + nextRecord[2]);
-                //System.out.println("Country :" + nextRecord[3]);
                 System.out.println("==========================");
             }
         } catch (IOException e) {
